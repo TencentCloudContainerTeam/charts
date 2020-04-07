@@ -253,7 +253,7 @@ alertmanager:
     ## Image of Alertmanager
     ##
     image:
-      repository: quay.io/prometheus/alertmanager
+      repository: prom/alertmanager
       tag: v0.20.0
 
     ## If true then the user will be responsible to provide a secret with alertmanager configuration
@@ -1186,14 +1186,14 @@ prometheusOperator:
   ## Prometheus-operator image
   ##
   image:
-    repository: quay.io/coreos/prometheus-operator
+    repository: ccr.ccs.tencentyun.com/mirrors/prometheus-operator
     tag: v0.37.0
     pullPolicy: IfNotPresent
 
   ## Configmap-reload image to use for reloading configmaps
   ##
   configmapReloadImage:
-    repository: quay.io/coreos/configmap-reload
+    repository: ccr.ccs.tencentyun.com/mirrors/configmap-reload
     tag: v0.0.1
 
   ## Prometheus-config-reloader image to use for config and rule reloading
@@ -1213,7 +1213,7 @@ prometheusOperator:
   ## Hyperkube image to use when cleaning up
   ##
   hyperkubeImage:
-    repository: k8s.gcr.io/hyperkube
+    repository: ccr.ccs.tencentyun.com/mirrors/hyperkube
     tag: v1.12.1
     pullPolicy: IfNotPresent
 
@@ -1424,7 +1424,7 @@ prometheus:
     ## Image of Prometheus.
     ##
     image:
-      repository: quay.io/prometheus/prometheus
+      repository: prom/prometheus
       tag: v2.15.2
 
     ## Tolerations for use with node taints
