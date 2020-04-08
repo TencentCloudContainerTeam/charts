@@ -3,7 +3,7 @@ entries:
   prometheus-operator:
   - apiVersion: v1
     appVersion: 0.37.0
-    created: "2020-04-07T21:29:37.771921+08:00"
+    created: "2020-04-08T15:16:13.602618+08:00"
     dependencies:
     - condition: kubeStateMetrics.enabled
       name: kube-state-metrics
@@ -36,6 +36,6 @@ entries:
     - https://github.com/coreos/prometheus-operator
     - https://coreos.com/operators/prometheus
     urls:
-    - https://github.com/TencentCloudContainerTeam/charts/prometheus-operator-8.12.3.tgz
+    - https://tencentcloudcontainerteam.github.io/charts/prometheus-operator-8.12.3.tgz
     version: 8.12.3
-generated: "2020-04-07T21:29:37.75185+08:00"
+generated: "2020-04-08T15:16:13.580375+08:00"
